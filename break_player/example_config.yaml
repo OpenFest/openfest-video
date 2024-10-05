@@ -1,4 +1,7 @@
-options:
+web_server:
+  bind: '[::]:8000'
+
+player:
   start_volume: 100
   reset_volume_at_each_play: true
 

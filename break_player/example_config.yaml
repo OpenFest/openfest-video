@@ -1,0 +1,23 @@
+options:
+  start_volume: 100
+  reset_volume_at_each_play: true
+
+playlists:
+  - name: 'promo'
+    order: 'sequential'
+    media:
+      - '/home/human/s/random/blender_movies/big_buck_bunny_720_stereo-720p.mp4'
+      - '/home/human/s/random/blender_movies/sintel-the-movie-720p.mp4'
+  - name: 'interviews'
+    media:
+      - 'rtmp://strm.ludost.net/openfest_interviews'
+  - name: 'ads'
+    order: 'shuffle'
+    media:
+      - '/home/human/s/random/blender_movies/big_buck_bunny_720_stereo-720p.mp4'
+      - '/home/human/s/random/blender_movies/sintel-the-movie-720p.mp4'
+      - '/home/human/s/random/blender_movies/elephants-dream-1080p.mp4'
+      - '/home/human/s/random/blender_movies/tears-of-steel.mp4'
+  - name: 'off'
+    media:
+      - '/home/human/s/random/placeholder.png'

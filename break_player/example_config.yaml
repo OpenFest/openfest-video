@@ -2,6 +2,7 @@ web_server:
   bind: '[::]:8000'
 
 player:
+  initial_playlist: 'off'
   start_volume: 100
   reset_volume_at_each_play: true
 
@@ -11,9 +12,15 @@ playlists:
     media:
       - '/home/human/s/random/blender_movies/big_buck_bunny_720_stereo-720p.mp4'
       - '/home/human/s/random/blender_movies/sintel-the-movie-720p.mp4'
-  - name: 'interviews'
+
+  - name: 'openart_casting_couch'
     media:
       - 'rtmp://strm.ludost.net/openfest_interviews'
+
+  - name: 'openart_lecture'
+    media:
+      - 'rtmp://strm.ludost.net/openfest_interviews'
+
   - name: 'ads'
     order: 'shuffle'
     media:
@@ -21,6 +28,7 @@ playlists:
       - '/home/human/s/random/blender_movies/sintel-the-movie-720p.mp4'
       - '/home/human/s/random/blender_movies/elephants-dream-1080p.mp4'
       - '/home/human/s/random/blender_movies/tears-of-steel.mp4'
+
   - name: 'off'
     media:
       - '/home/human/s/random/placeholder.png'
